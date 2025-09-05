@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Golden Varsity';
+    src: url('GoldenVarsity-Regular.woff2') format('woff2'),
+        url('GoldenVarsity-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: gainsboro;
+    font-size: 16px;
+}
+
+.sidebar {
+    background-image: url(images/sidebar.jpg);
+    background-size: auto;
+    width: 700px;
+    height: 700px;
 }
