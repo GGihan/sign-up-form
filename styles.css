@@ -73,7 +73,7 @@ main {
 
 main .title p {
     max-width: 55ch;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -85,9 +85,32 @@ main .account {
     padding: 25px 50px 0px 50px;
 }
 
+main .account a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+main button {
+    font-size: 1.5rem;
+
+    background-color: aliceblue;
+    color: darkblue;
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+main button:hover {
+    box-shadow: 1px 1px 5px blue;
+    background-color: blue;
+    color: white;
+}
+
 .sign-up-form .inputs {
     display: flex;
     gap: 50px;
+    
+    overflow: auto;
 }
 
 button,
@@ -96,10 +119,15 @@ select,
 textarea {
     font-family: inherit;
     font-size: 100%;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 input {
     appearance: none;
+    font-size: 1.3rem;
 }
 
 label {
@@ -120,12 +148,21 @@ label {
 }
 
 .sign-up-form input {
-    border: ;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
-.sign-up-form .column-1 {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
+.sign-up-form input[type="password"]:user-invalid {
+    border-color: rgb(251, 59, 59);    
 }
 
+.sign-up-form input[type]:focus {
+    outline: none;
+    border-color: darkblue;
+    box-shadow: 1px 1px 5px darkblue;
+}
+
+.sign-up-form input[type]:user-valid {
+    border-color: darkgreen;
+    box-shadow: 1px 1px 5px darkgreen;
+}
