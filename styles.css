@@ -20,7 +20,9 @@ body {
 .sidebar {
    color: white;
    position: relative;
-   height: 100vh;
+   min-height: 100vh;
+   overflow: hidden;
+   min-width: 250px;
 }
 
 .sidebar .banner {
@@ -65,8 +67,12 @@ main {
     justify-content: space-between;
 
     background-color: gainsboro;
+    padding: 150px 50px;
 }
 
+main .title p {
+    max-width: 65ch;
+}
 
 .sign-up-form .inputs {
     display: flex;
