@@ -19,6 +19,7 @@ body {
 .sidebar {
    color: white;
    position: relative;
+   height: 100vh;
 }
 
 .sidebar .banner {
@@ -37,7 +38,7 @@ body {
 }
 
 .sidebar .banner p {
-    font-family: "Golden Varsity";
+    font-family: "Golden Varsity", sans-serif;
     font-size: 3rem;
     letter-spacing: 0.5rem;
 }
@@ -48,9 +49,8 @@ body {
 
 .sidebar > p {
     position: absolute;
-    bottom: 0;
-    inset-inline-start: 0;
-    margin-left: 5px;
+    inset-block-start: 920px;
+    left: 5px;
 }
 
 .sidebar a {
