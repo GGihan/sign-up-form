@@ -150,6 +150,7 @@ label {
 .sign-up-form input {
     border: 2px solid grey;
     border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.087);
 }
 
 .sign-up-form input[type="password"]:user-invalid {
